@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>	
+    <title>Formulario</title>
+  </head>
+  <body>
+  <h1> Formulario de registro</h1>
+  <fieldset>
+  <legend> datos usuario</legend>
+    <form name="form" action="pagina2.html" method="get">
+	<label> Nombre: </label>
+	<input type="text"  maxlength="50" name="Nombre:" placeholder="pon aqui tu nombre">
+	<br>
+	<br>
+	<label> Apellidos: </label>
+	<input type="text" maxlength="50" name="Apellidos:" placeholder="pon aqui tus apellidos">
+	<br>
+	<br>
+	<label> Sexo: </label> <input type="radio" name="sexo" value="M"> hombre
+			 <input type="radio" name="sexo" value="F"> mujer
+	
+	<br>
+	<br>
+	<label> Correo: </label>
+	<input type="text" name="Correo:" placeholder="pon aqui tu correo">
+	<br>
+	<br>
+	<label> Rol: </label>
+	<select name="ROL" >
+	<option hidden ="">  
+	<option value="EST"> ESTUDIANTE </option>
+	<option value="PROFE"> PROFESOR </option>
+	<option value="AYU"> AYUDANTE </option>
+	<option value="ADM"> ADMINISTRADOR </option>	
+	</select>
+	<br>
+	
+	<br>
+	<label> Deseo recibir información sobre novedades y ofertas </label> <input checked type="checkbox" name="informacion" value="info">
+	<br>
+	<label> Declaro haber leido y aceptar las condiciones
+	generales del programa y la normativa sobre protección de datos </label> <input  type="checkbox" name="informacion" value="info">
+	<br>
+	<br>
+	
+	<input type="submit" name="enviar" value="enviar" />
+	<input type="reset" name="borrar" value="borrar"/>
+ </fieldset>
+</html>
